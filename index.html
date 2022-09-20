@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+    <title>Unity WebGL Player | Spaceship</title>
+  </head>
+  <body style="text-align: center">
+    <div class="container">
+      <canvas id="unity-canvas" style="width: 1024px; height: 768px; background: #191919"></canvas>
+      <button type="button" class="button-back" onclick="window.location.href='https://tu1ip.github.io';"> VOLVER</button>
+    </div>
+    <script src="Build/Spaceship.asm.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Spaceship.data.unityweb",
+        frameworkUrl: "Build/Spaceship.asm.framework.js.unityweb",
+        codeUrl: "Build/Spaceship.asm.js.unityweb",
+        memoryUrl: "Build/Spaceship.asm.mem.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "CC",
+        productName: "Spaceship",
+        productVersion: "2.0",
+      });
+    </script>
+  </body>
+</html>

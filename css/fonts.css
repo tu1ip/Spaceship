@@ -1,0 +1,7 @@
+/* Rubik Font */
+@font-face {
+  font-family: 'rubikbold';
+  src: url("../fonts/rubik-bold-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
